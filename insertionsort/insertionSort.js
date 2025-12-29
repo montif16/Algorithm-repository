@@ -16,7 +16,7 @@ export function insertionSort(arr) {
     arr[j + 1] = key;
   }
 
-      // Sorted array and number of iterations
+    // Sorted array and number of iterations
     // Insertion sort (shift)
   return {
     arr, iterations
