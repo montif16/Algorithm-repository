@@ -24,8 +24,22 @@ Værste tilfælde:
 O(n²)
 Opstår når pivot altid er det mindste eller største element (fx allerede sorteret liste og dårlig pivot-strategi).
 
+Pseudokode
 Funktion (array) {
+
+    if ( Array.legth <= 1) {
+        return array
+    }
+    Pivot = array.length - 1
     Højre side = []
     Venstre side = []
 
-}
+    for loop {
+        if (array[i] > pivot) {
+            Skub til til højre
+            } ellers {
+                skub til venstre
+            }
+            Return venstre + pivot + højre
+        }
+    }
