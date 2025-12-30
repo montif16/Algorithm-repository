@@ -34,7 +34,19 @@ export function merge(left, right) {
   return { result, iterations };
 }
 
-//TODO:
 export function mergeSort(arr) {
-  return { arr, iterations: 0, sorted: false };
+  if (arr.length <= 1) {
+    return {
+      arr,
+      iterations: 1,
+      sorted: true
+    };
+  }
+
+  return {
+    arr,
+    iterations: 1,
+    sorted: false
+  };
 }
+
