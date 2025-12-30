@@ -35,24 +35,31 @@ export function merge(left, right) {
 }
 
 export function mergeSort(arr) {
+  let iterations = 1;
+
   if (arr.length <= 1) {
-    return {
-      arr,
-      iterations: 1,
-      sorted: true
-    };
+    return { arr, iterations, sorted: true };
   }
 
   const mid = Math.floor(arr.length / 2);
   const left = arr.slice(0, mid);
   const right = arr.slice(mid);
 
-  console.log("split", left, right);
+  const leftResult = mergeSort(left);
+  const rightResult = mergeSort(right);
+
+  const merged = merge(leftResult.arr, rightResult.arr);
+
+  iterations +=
+    leftResult.iterations +
+    rightResult.iterations +
+    merged.iterations;
 
   return {
-    arr,
-    iterations: 1,
-    sorted: false
+    arr: merged.result,
+    iterations,
+    sorted: true
   };
 }
+
 

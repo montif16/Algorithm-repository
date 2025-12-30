@@ -10,6 +10,22 @@ console.log(mergeSort([]));
 console.log(mergeSort([5]));
 console.log(mergeSort([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]));
 */
-
+/*
 console.log(mergeSort([5, 2, 8, 1]));
 console.log(mergeSort([10, -1, 2, 3, 0]));
+*/
+
+// console.log(mergeSort([5, 2, 8, 1]));
+
+const cases = [
+  [],
+  [1],
+  [3, 2],
+  [5, 2, 8, 1],
+  [5, 8, 2, 1, 0, 4, 3, 9, 7, 6]
+];
+
+for (const arr of cases) {
+  console.log("\nINPUT:", arr);
+  console.log(mergeSort(arr));
+}
