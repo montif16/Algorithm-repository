@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=ceqwscS_muA - QuickSort forklaring
 https://www.youtube.com/watch?v=lWLTHsQnHDI&t=176s - quickSort tutorial
 https://en.wikipedia.org/wiki/Quicksort - quickSort wikipedia
 
-QuickSort er en divide-and-conquer sorteringsalgoritme. Den vælger et pivot-element og opdeler listen i to dele: elementer mindre end pivot og elementer større end pivot. Disse dele sorteres derefter rekursivt.
+QuickSort er en divide-and-conquer sorteringsalgoritme. Den vælger et pivot-element og opdeler listen i 2 dele: elementer mindre end pivot og elementer større end pivot. Disse dele sorteres derefter rekursivt.
 
 Tidskompleksitet
 
@@ -27,5 +27,5 @@ Opstår når pivot altid er det mindste eller største element (fx allerede sort
 Funktion (array) {
     Højre side = []
     Venstre side = []
-    
+
 }
