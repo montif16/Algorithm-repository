@@ -43,6 +43,12 @@ export function mergeSort(arr) {
     };
   }
 
+  const mid = Math.floor(arr.length / 2);
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid);
+
+  console.log("split", left, right);
+
   return {
     arr,
     iterations: 1,
